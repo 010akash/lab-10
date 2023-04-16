@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view data</title>
+    <style>
+        table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+  font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <table class="tb">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#data}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{emailid}}</td>
+                <td>{{phoneno}}</td>
+                <td>{{gender}}</td>
+            </tr>
+            {{/data}}
+        </tbody>
+    </table><br><br>
+  <a href="./" style="color:black">BACK TO HOME PAGE</a> <br>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 2px;
+            background-color: rgb(215, 246, 250);
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(43, 226, 134);
+            margin: 10px;
+
+        }
+
+        .menu a {
+            margin: 10px;
+            font-size: 15px;
+            font-weight: bolder;
+            color: white;
+            font-size: 25px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid black;
+            color: black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="/add">ADD </a>
+        <a href="/search">SEARCH </a>
+        {{!-- <a href="/update">UPDATE</a> --}}
+        <a href="/delete">DELETE</a>
+        <a href="/view">VIEW </a>
+    </div>
+</body>
+
+</html>
